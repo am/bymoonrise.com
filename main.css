@@ -1,0 +1,12 @@
+.background {
+    height: 100vh;
+    background-image: linear-gradient(to right top, #efe1b4, #f1e8c1, #f3efcf, #f7f6dd, #fbfcea);
+}
+
+.instagram-icon {
+    margin-left: 0.5em;
+}
+
+.header {
+    margin: 7em 2em;
+}
