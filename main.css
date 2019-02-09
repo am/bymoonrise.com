@@ -1,6 +1,6 @@
 .background {
     height: 100vh;
-    background-image: linear-gradient(to right top, #efe1b4, #f1e8c1, #f3efcf, #f7f6dd, #fbfcea);
+    background-image: linear-gradient(#7DABC0, #D5C8B9);
 }
 
 .instagram-icon {
@@ -9,4 +9,19 @@
 
 .header {
     margin: 7em 2em;
+}
+
+.h1 {
+    display: inline;
+    font-weight: bold;
+    color: white;
+}
+
+.description {
+    display: inline;
+    color: white;
+}
+
+.links {
+    margin: 1em 0;
 }
