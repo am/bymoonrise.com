@@ -7,14 +7,14 @@
   "license": "MIT",
   "private": true,
   "engines": {
-    "yarn": "^1.10.1"
+    "node": ">=18.0.0"
   },
   "scripts": {
     "clean": "rm -rf public/*",
     "assets": "cp -r downloads public/",
-    "dev": "yarn assets && yarn parcel index.html -d public --log-level 5",
-    "build": "yarn assets && yarn parcel build index.html -d public",
-    "postinstall": "yarn clean && yarn build"
+    "dev": "npm run assets && npx parcel index.html -d public --log-level 5",
+    "build": "npm run assets && npx parcel build index.html -d public",
+    "postinstall": "npm run clean && npm run build"
   },
   "dependencies": {
     "parcel-bundler": "^1.10.3",
