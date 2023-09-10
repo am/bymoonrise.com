@@ -10,10 +10,10 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "clean": "rm -rf public/*",
-    "assets": "cp -r downloads public/",
-    "dev": "npm run assets && npx parcel index.html -d public --log-level 5",
-    "build": "npm run assets && npx parcel build index.html -d public",
+    "clean": "rm -rf dist/*",
+    "assets": "cp -r downloads dist/",
+    "dev": "npm run assets && npx parcel index.html -d dist --log-level 5",
+    "build": "npm run assets && npx parcel build index.html -d dist",
     "postinstall": "npm run clean && npm run build"
   },
   "dependencies": {
