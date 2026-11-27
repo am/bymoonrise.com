@@ -11,13 +11,18 @@
   },
   "scripts": {
     "clean": "rm -rf dist/*",
-    "assets": "cp -r downloads dist/",
+    "assets": "mkdir -p dist/downloads && cp downloads/* dist/ && cp downloads/* dist/downloads/",
     "dev": "npm run assets && npx parcel index.html -d dist --log-level 5",
     "build": "npm run assets && npx parcel build index.html -d dist",
-    "postinstall": "npm run clean && npm run build"
+    "postinstall": "npm run clean && npm run build",
+    "deploy": "npm run build && wrangler deploy",
+    "preview:cf": "npm run build && wrangler dev"
   },
   "dependencies": {
     "parcel-bundler": "^1.10.3",
     "suncalc": "^1.8.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.167.0"
   }
 }
